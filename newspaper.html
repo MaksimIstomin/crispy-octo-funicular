@@ -11,9 +11,8 @@
     <title>Flexbox</title>
 </head>
 
-<style>
-.body{
-
+<style>body{
+ 
  
 }
 
@@ -23,16 +22,16 @@ display: flex;
 }
 .d{
 text-align:justify;
-  padding-left: 20px;  
-  padding-right: 20px;
+  padding-left: 25px;  
+  padding-right: 25px;
 border-left: 2px solid black;
 border-right: 2px solid black;
-
+font-family: cursive;
 }
 .logo{
     display: flex;
     justify-content: center;
-    font-family: 'Newsreader', serif;
+    font-family: cursive;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
@@ -62,7 +61,38 @@ display: flex;
 justify-content: center;
 text-transform: uppercase;
 border-top: 2px solid black;
-}</style>
+}
+.menu{
+  display: flex;
+  justify-content:space-around;
+color: black;
+
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+nav ul.menu>li>a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #1729B0;
+  text-decoration: none;
+}
+
+nav ul.menu>li>a:hover {
+  background-color: #00B64F;
+}
+nav {
+ 
+  background: #1729B0;
+}
+
+</style>
    <body>
     <nav>
         <ul class="menu">
